@@ -26,9 +26,12 @@ int main()
       break;
     case 'c':
       puts("You selected chars:");
-      for (char c = 'A'; c < 'D'; c++)
-	print_char_5x7(c);
-      break;
+      puts("Which font would you like to use (11x16 = x, 5x7 = y, 8x12 = z)");
+      g=getchar();
+      switch(g){
+	
+      case 'y':
+	for (ch
     case 'a':
       puts("You selected an arrow:");
       print_triangle(5, 7);
@@ -46,5 +49,4 @@ int main()
 
  done: // To exit from program
   return 0;
-
- }
+}
